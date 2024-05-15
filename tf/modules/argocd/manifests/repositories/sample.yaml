@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  annotations:
+    managed-by: argocd.argoproj.io
+  labels:
+    argocd.argoproj.io/secret-type: repository
+  name: sample-repo
+  namespace: argocd
+type: Opaque
+data:
+  password: replace-me-in-base64
+  project: replace-me in-base64
+  type: Z2l0
+  url: replace-me in-base64
+  username: replace-me in-base64
+
+
